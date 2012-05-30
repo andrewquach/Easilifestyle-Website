@@ -1,0 +1,14 @@
+a:2:{i:0;s:83:"Invalid method Mage_Customer_Model_Customer::loadByNric(Array
+(
+    [0] => N123
+)
+)";i:1;s:1365:"#0 /var/www/vhosts/easilifestyle.com/httpdocs/app/code/core/Mage/Checkout/Model/Type/Onepage.php(666): Varien_Object->__call('loadByNric', Array)
+#1 /var/www/vhosts/easilifestyle.com/httpdocs/app/code/core/Mage/Checkout/Model/Type/Onepage.php(666): Mage_Customer_Model_Customer->loadByNric('N123')
+#2 /var/www/vhosts/easilifestyle.com/httpdocs/app/code/core/Mage/Checkout/Model/Type/Onepage.php(167): Mage_Checkout_Model_Type_Onepage->_customerNricExists('N123', '1')
+#3 /var/www/vhosts/easilifestyle.com/httpdocs/app/code/core/Mage/Checkout/controllers/OnepageController.php(264): Mage_Checkout_Model_Type_Onepage->saveBilling(Array, false)
+#4 /var/www/vhosts/easilifestyle.com/httpdocs/app/code/core/Mage/Core/Controller/Varien/Action.php(376): Mage_Checkout_OnepageController->saveBillingAction()
+#5 /var/www/vhosts/easilifestyle.com/httpdocs/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(248): Mage_Core_Controller_Varien_Action->dispatch('saveBilling')
+#6 /var/www/vhosts/easilifestyle.com/httpdocs/app/code/core/Mage/Core/Controller/Varien/Front.php(158): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 /var/www/vhosts/easilifestyle.com/httpdocs/app/Mage.php(459): Mage_Core_Controller_Varien_Front->dispatch()
+#8 /var/www/vhosts/easilifestyle.com/httpdocs/index.php(65): Mage::run()
+#9 {main}";}

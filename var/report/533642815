@@ -1,0 +1,10 @@
+a:2:{i:0;s:225:"Error in file: "/var/www/vhosts/easilifestyle.com/httpdocs/app/code/core/Mage/Admin/sql/admin_setup/mysql4-install-0.7.0.php" - SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'usez_admin_assert' already exists";i:1;s:1193:"#0 /var/www/vhosts/easilifestyle.com/httpdocs/app/code/core/Mage/Core/Model/Resource/Setup.php(292): Mage::exception('Mage_Core', 'Error in file: ...')
+#1 /var/www/vhosts/easilifestyle.com/httpdocs/app/code/core/Mage/Core/Model/Resource/Setup.php(167): Mage_Core_Model_Resource_Setup->_modifyResourceDb('install', '', '0.7.1')
+#2 /var/www/vhosts/easilifestyle.com/httpdocs/app/code/core/Mage/Core/Model/Resource/Setup.php(155): Mage_Core_Model_Resource_Setup->_installResourceDb('0.7.1')
+#3 /var/www/vhosts/easilifestyle.com/httpdocs/app/code/core/Mage/Core/Model/Resource/Setup.php(121): Mage_Core_Model_Resource_Setup->applyUpdates()
+#4 /var/www/vhosts/easilifestyle.com/httpdocs/app/code/core/Mage/Core/Model/Config.php(263): Mage_Core_Model_Resource_Setup::applyAllUpdates()
+#5 /var/www/vhosts/easilifestyle.com/httpdocs/app/code/core/Mage/Core/Model/App.php(263): Mage_Core_Model_Config->init(Array)
+#6 /var/www/vhosts/easilifestyle.com/httpdocs/app/Mage.php(434): Mage_Core_Model_App->init('', 'store', Array)
+#7 /var/www/vhosts/easilifestyle.com/httpdocs/app/Mage.php(455): Mage::app('', 'store', Array)
+#8 /var/www/vhosts/easilifestyle.com/httpdocs/index.php(65): Mage::run()
+#9 {main}";}

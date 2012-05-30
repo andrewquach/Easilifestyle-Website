@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+    </default>
+    <orphanpool_index_index>
+        <reference name="content">
+            <block type="orphanpool/orphanpool" name="orphanpool" template="orphanpool/orphanpool.phtml" />
+        </reference>
+    </orphanpool_index_index>
+</layout> 

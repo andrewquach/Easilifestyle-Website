@@ -1,0 +1,51 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category   design_default
+ * @package    Mage
+ * @copyright  Copyright (c) 2008 Irubin Consulting Inc. DBA Varien (http://www.varien.com)
+ * @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Create account form template
+ *
+ * @see Mage_Customer_Block_Form_Register
+ */
+?>
+<div class="page-head">
+    <h3><?php echo $this->__('Create an Account') ?></h3>
+</div>
+<?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+<form action="<?php echo Mage::getUrl('customer/account/affiliatePost') ?>" method="post" id="form-validate">
+    <fieldset class="group-select wide">
+  
+        <h4 class="legend"><?php echo $this->__('About Affiliate Merchant') ?></h4>
+       <p>Thong bao cho thanh vien cac dieu khoan su dung khi dang ki lam Affiliate Merchant</p>
+       <p>Nhung quyen loi cua thanh vien</p>
+       <p>Nhung trach nhiem cua thanh vien</p>
+    </fieldset>
+    <div class="button-set">
+        <p class="required"><?php echo $this->__('* Required Fields') ?></p>
+        <a href="javascript:history.go(-1)" class="left">&laquo; <?php echo $this->__('Back') ?></a>
+        <button class="form-button" type="submit"><span><?php echo $this->__('Register') ?></span></button>
+    </div>
+</form>

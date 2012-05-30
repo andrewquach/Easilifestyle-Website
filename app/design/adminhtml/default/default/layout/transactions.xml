@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <transactions_adminhtml_transactions_index>
+        <reference name="content">
+            <block type="transactions/adminhtml_transactions" name="transactions" />
+        </reference>
+    </transactions_adminhtml_transactions_index>
+</layout>

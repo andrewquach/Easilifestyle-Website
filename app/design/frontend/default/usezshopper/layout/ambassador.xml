@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+    </default>
+    <ambassador_index_index>
+    	<update handle="ambassador_index_grid"/>
+    	<reference name="content">
+           <block type="ambassador/adminhtml_customer" name="customer"/>
+        </reference>
+    
+    
+    <!--
+        <reference name="content">
+            <block type="ambassador/ambassador" name="ambassador" template="ambassador/ambassador.phtml" />
+        </reference>
+    --></ambassador_index_index>
+    <!-- test -->
+    <ambassador_index_insertbv>
+    	<reference name="content">
+            <block type="ambassador/ambassador" name="ambassador" template="ambassador/insertbv.phtml" />
+        </reference>
+    </ambassador_index_insertbv>
+    
+    <ambassador_index_grid>
+    	<reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+            <!-- Mark root page block that template is applied -->
+            <action method="setIsHandle"><applied>1</applied></action> 
+            <block type="ambassador/ambassador" name="ambassador" as="ambassadorpanel" template="ambassador/navagation.phtml"/>
+    	</reference>
+    	<reference name="head">
+            <action method="addCss"><stylesheet>css/boxes_grid.css</stylesheet></action>
+            <action method="addJs"><script>mage/adminhtml/grid.js</script></action>
+            <action method="addJs"><script>mage/adminhtml/hash.js</script></action>
+            <action method="addJs"><script>mage/adminhtml/events.js</script></action>
+            <action method="addJs"><script>mage/adminhtml/loader.js</script></action>
+            <action method="addJs"><script>mage/adminhtml/grid.js</script></action>
+            <action method="addJs"><script>mage/adminhtml/tabs.js</script></action>
+            <action method="addJs"><script>mage/adminhtml/form.js</script></action>
+            <action method="addJs"><script>mage/adminhtml/accordion.js</script></action>
+            <action method="addJs"><script>mage/adminhtml/tools.js</script></action>
+            
+            <action method="addJs"><script>calendar/calendar.js</script></action>
+            <action method="addJs"><script>jscalendar/lang/calendar-en.js</script></action>
+            <action method="addJs"><script>calendar/calendar-setup.js</script></action>
+            <action method="addCss"><stylesheet>calendar/calendar-win2k-1.css</stylesheet></action>
+            
+            <action method="addItem"><type>js_css</type><name>calendar/calendar-win2k-1.css</name><params/><!--<if/><condition>can_load_calendar_js</condition>--></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar.js</name><!--<params/><if/><condition>can_load_calendar_js</condition>--></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar-setup.js</name><!--<params/><if/><condition>can_load_calendar_js</condition>--></action>
+        </reference>
+        
+    </ambassador_index_grid>
+    <ambassador_index_viewgroupbv>
+    	<update handle="ambassador_index_grid"/>
+    	<reference name="content">
+           <block type="ambassador/adminhtml_groupbv" name="groupbv"/>
+        </reference>
+    </ambassador_index_viewgroupbv>
+    <ambassador_index_viewgroupgl>
+    	<update handle="ambassador_index_grid"/>
+    	<reference name="content">
+           <block type="ambassador/adminhtml_groupgl" name="groupgl"/>
+        </reference>
+    </ambassador_index_viewgroupgl>
+    <ambassador_index_viewbv>
+    	<update handle="ambassador_index_grid"/>
+    	<reference name="content">
+           <block type="ambassador/adminhtml_accountbv" name="accountbv"/>
+        </reference>
+    </ambassador_index_viewbv>
+    <ambassador_index_viewgl>
+    	<update handle="ambassador_index_grid"/>
+    	<reference name="content">
+           <block type="ambassador/adminhtml_accountgl" name="accountgl"/>
+        </reference>
+    </ambassador_index_viewgl>
+    <ambassador_index_denied>
+    	<reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+            <!-- Mark root page block that template is applied -->
+            <action method="setIsHandle"><applied>1</applied></action> 
+    	</reference>
+    	<reference name="content">
+           <block type="ambassador/denied" name="denied" template="ambassador/denied.phtml"/>
+        </reference>
+    </ambassador_index_denied>
+    <ambassador_index_test>
+    	<reference name="content">
+    	<block type="ambassador/ambassador" name="test" template="ambassador/ambassador.phtml"/>
+    	</reference>
+    </ambassador_index_test>
+</layout> 

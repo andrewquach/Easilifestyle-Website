@@ -1,0 +1,72 @@
+<?php $_item = $this->getProduct()?>
+<?php 
+$rowspan = 1;
+$colspan = 1;
+$customer_gl = $this->getCustomerGl();
+$total_gl = $this->getTotal();
+$customer = Mage::getModel('customer/session')->getCustomerId();
+
+?>
+<?php if($customer == null):?>
+<fieldset class="form-list">
+    <ul>
+    <li>
+    <p>Only member can buy product via EL Points. Please <a href="<?php echo $this->getUrl('customer/account/login')?>">login</a> first.</p>
+    </li>
+    </ul>
+</fieldset>
+<?php else:?>
+<fieldset class="form-list">
+    <ul>
+    
+       <li>
+       <table cellspacing="0" class="data-table" id="checkout-review-table">
+    <thead>
+        <tr>
+            <th rowspan="<?php echo $rowspan ?>"><?php echo $this->__('Product Name') ?></th>
+            <th class="a-center" colspan="<?php echo $colspan ?>" width="10%"><?php echo $this->__('Price') ?></th>
+            <th class="a-center" colspan="<?php echo $colspan ?>" width="10%"><?php echo $this->__('EL Price') ?></th>
+            <th class="a-center" colspan="<?php echo $colspan ?>" width="5%"><?php echo $this->__('Qty') ?></th>
+            <th class="a-center" colspan="<?php echo $colspan ?>" width="10%"><?php echo $this->__('EL Subtotal') ?></th>
+        </tr>
+    </thead>
+    
+    <tbody>
+    		<tr>
+            <td rowspan="<?php echo $rowspan ?>"><?php echo $this->getProduct()->getName() ?></td>
+            <td class="a-center" colspan="<?php echo $colspan ?>" width="10%"><?php echo $this->getProduct()->getPrice() ?></td>
+            <td class="a-center" colspan="<?php echo $colspan ?>" width="5%"><?php echo $_item->getGlPrice() ?></td>
+            <td class="a-center" colspan="<?php echo $colspan ?>" width="5%"><?php echo $this->getQty() ?></td>
+            <td class="a-center" colspan="<?php echo $colspan ?>" width="10%"><?php echo $this->getTotal() ?></td>
+        </tr>
+    </tbody>
+    <tfoot>
+   <tr>
+   <td colspan="4" style="text-align:right"><strong>Total EL Spent:</strong></td>
+   <td colspan="6" style="text-align:right"><strong><?php echo $this->getTotal();?></strong></td>
+   </tr>
+</tfoot>
+</table>
+ </li>
+       <?php if($customer_gl >= $total_gl):?>
+       <li>
+       <p><?php echo $this->__('Your current Accumulate EL Points is :')?> <strong><?php echo $customer_gl?><?php echo $this->__('GL')?></strong></p>
+       <p><?php echo $this->__('After payment,your Accumulate EL Points is :')?> <strong><?php echo $customer_gl-$total_gl?><?php echo $this->__('GL')?></strong></p>
+       <form action="<?php echo $this->getUrl('redemption/index/placeorder',array('id'=>$_item->getId()))?>" name="place_order" method="post">
+       <input type="hidden" name="product_id" value="<?php echo $_item->getId()?>" />
+       <input type="hidden" name="qty" value="<?php echo $this->getQty()?>" />
+       <input type="hidden" name="gl_price" value="<?php echo $_item->getGlPrice()?>" />
+       <input type="hidden" name="total" value="<?php echo $this->getTotal()?>" />
+       <p><button type="submit" class="form-button" ><span><?php echo $this->__('Place Order') ?></span></button></p>
+       </form>
+       </li>
+       <?php else :?>
+       <li style="color:red;">
+       <p><?php echo $this->__('Your current Accumulate EL Points is :')?> <strong><?php echo $customer_gl?><?php echo $this->__('GL')?></strong></p>
+       <p><?php echo $this->__('You do not have enough EL for Redemption product. Please select another product')?> </p>
+       </li>
+       
+        <?php endif;?>
+    </ul>
+</fieldset>
+<?php endif;?>

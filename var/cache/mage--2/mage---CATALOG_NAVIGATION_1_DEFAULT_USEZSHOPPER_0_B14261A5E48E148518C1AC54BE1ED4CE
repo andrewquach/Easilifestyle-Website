@@ -1,0 +1,35 @@
+<!--<div class="box layered-nav">
+    <div class="head">
+        <h3>Browse By</h3>
+    </div>
+    <div class="border-creator">
+        <div class="narrow-by">
+            <dl id="narrow-by-list">
+                <dt>Category</dt>
+                <dd>
+                    <ol>
+                                                                    <li>
+                            <a href="http://easilifestyle.com/index.php/personal-care-1/facial-soap.html">Facial Soap</a> (0)
+                        </li>
+                                                                                            <li>
+                            <a href="http://easilifestyle.com/index.php/personal-care-1/feminine-care.html">Feminine Care</a> (2)
+                        </li>
+                                                                                            <li>
+                            <a href="http://easilifestyle.com/index.php/personal-care-1/fragrance.html">Fragrance</a> (0)
+                        </li>
+                                                                                            <li>
+                            <a href="http://easilifestyle.com/index.php/personal-care-1/skin-care.html">Skin Care</a> (0)
+                        </li>
+                                                                                            <li>
+                            <a href="http://easilifestyle.com/index.php/personal-care-1/glucosamina-cream.html">Glucosamina Cream</a> (0)
+                        </li>
+                                                                                            <li>
+                            <a href="http://easilifestyle.com/index.php/personal-care-1/healthy-belt.html">Healthy Belt</a> (0)
+                        </li>
+                                                                </ol>
+                </dd>
+            </dl><script type="text/javascript">decorateDataList('narrow-by-list')</script>
+        </div>
+    </div>
+</div>-->
+<!-- [ends] .browse-by // -->

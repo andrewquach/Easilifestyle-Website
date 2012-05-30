@@ -1,0 +1,299 @@
+
+<!-- menu start -->
+
+<!-- menu end -->
+<div class="nav-bar">
+    <ul id="nav">
+                <li  class="   level0"> <a href="https://easilifestyle.com/index.php/admin/dashboard/"   class=""><span>Dashboard</span></a>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level0"> <a href="#"  onclick="return false" class=""><span>Sales</span></a>
+                                <ul >
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/sales_order/"   class=""><span>Orders</span></a>
+                    </li>
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/sales_invoice/"   class=""><span>Invoices</span></a>
+                    </li>
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/sales_shipment/"   class=""><span>Shipments</span></a>
+                    </li>
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/sales_creditmemo/"   class=""><span>Credit Memos</span></a>
+                    </li>
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/checkout_agreement/"   class=""><span>Terms and conditions</span></a>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent last level1"> <a href="#"  onclick="return false" class=""><span>Tax</span></a>
+                                <ul >
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/tax_rule/"   class=""><span>Manage Tax Rules</span></a>
+                    </li>
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/tax_rate/"   class=""><span>Manage Tax Zones & Rates</span></a>
+                    </li>
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/tax_rate/importExport/"   class=""><span>Import / Export Tax Rates</span></a>
+                    </li>
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/tax_class_customer/"   class=""><span>Customer Tax Classes</span></a>
+                    </li>
+                <li  class="   last level2"> <a href="https://easilifestyle.com/index.php/admin/tax_class_product/"   class=""><span>Product Tax Classes</span></a>
+                    </li>
+            </ul>
+                    </li>
+            </ul>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level0"> <a href="#"  onclick="return false" class=""><span>Catalog</span></a>
+                                <ul >
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/catalog_product/"   class=""><span>Manage Products</span></a>
+                    </li>
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/catalog_category/"   class=""><span>Manage Categories</span></a>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level1"> <a href="#"  onclick="return false" class=""><span>Attributes</span></a>
+                                <ul >
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/catalog_product_attribute/"   class=""><span>Manage Attributes</span></a>
+                    </li>
+                <li  class="   last level2"> <a href="https://easilifestyle.com/index.php/admin/catalog_product_set/"   class=""><span>Manage Attribute Sets</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/urlrewrite/index/"   class=""><span>Url Rewrite Management</span></a>
+                    </li>
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/catalog_search/"   class=""><span>Search</span></a>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level1"> <a href="#"  onclick="return false" class=""><span>Reviews and Ratings</span></a>
+                                <ul >
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level2"> <a href="#"  onclick="return false" class=""><span>Customer Reviews</span></a>
+                                <ul >
+                <li  class="   level3"> <a href="https://easilifestyle.com/index.php/admin/catalog_product_review/pending/"   class=""><span>Pending Reviews</span></a>
+                    </li>
+                <li  class="   last level3"> <a href="https://easilifestyle.com/index.php/admin/catalog_product_review/"   class=""><span>All Reviews</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li  class="   last level2"> <a href="https://easilifestyle.com/index.php/admin/rating/"   class=""><span>Manage Ratings</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level1"> <a href="#"  onclick="return false" class=""><span>Tags</span></a>
+                                <ul >
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/tag/pending/"   class=""><span>Pending Tags</span></a>
+                    </li>
+                <li  class="   last level2"> <a href="https://easilifestyle.com/index.php/admin/tag/index/"   class=""><span>All Tags</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level1"> <a href="#"  onclick="return false" class=""><span>Google Base</span></a>
+                                <ul >
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/googlebase/types/"   class=""><span>Manage Attributes</span></a>
+                    </li>
+                <li  class="   last level2"> <a href="https://easilifestyle.com/index.php/googlebase/items/"   class=""><span>Manage Items</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li  class="   last level1"> <a href="https://easilifestyle.com/index.php/admin/sitemap/"   class=""><span>Google Sitemap</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level0"> <a href="#"  onclick="return false" class=""><span>Customers</span></a>
+                                <ul >
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/customer/"   class=""><span>Manage Customers</span></a>
+                    </li>
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/customer_group/"   class=""><span>Customer Groups</span></a>
+                    </li>
+                <li  class="   last level1"> <a href="https://easilifestyle.com/index.php/admin/customer_online/"   class=""><span>Online Customers</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level0"> <a href="#"  onclick="return false" class=""><span>Promotions</span></a>
+                                <ul >
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/promo_catalog/"   class=""><span>Catalog Price Rules</span></a>
+                    </li>
+                <li  class="   last level1"> <a href="https://easilifestyle.com/index.php/admin/promo_quote/"   class=""><span>Shopping Cart Price Rules</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level0"> <a href="#"  onclick="return false" class=""><span>Newsletter</span></a>
+                                <ul >
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/newsletter_template/"   class=""><span>Newsletter Templates</span></a>
+                    </li>
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/newsletter_queue/"   class=""><span>Newsletter Queue</span></a>
+                    </li>
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/newsletter_subscriber/"   class=""><span>Newsletter Subscribers</span></a>
+                    </li>
+                <li  class="   last level1"> <a href="https://easilifestyle.com/index.php/admin/newsletter_problem/"   class=""><span>Newsletter Problem Reports</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level0"> <a href="#"  onclick="return false" class=""><span>CMS</span></a>
+                                <ul >
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/cms_page/"   class=""><span>Manage Pages</span></a>
+                    </li>
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/cms_block/"   class=""><span>Static Blocks</span></a>
+                    </li>
+                <li  class="   last level1"> <a href="https://easilifestyle.com/index.php/admin/poll/"   class=""><span>Poll Manager</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level0"> <a href="#"  onclick="return false" class=""><span>Redemption</span></a>
+                                <ul >
+                <li  class="   last level1"> <a href="https://easilifestyle.com/index.php/redemption/adminhtml_redemption/"   class=""><span>Redemption Product Order</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level0"> <a href="#"  onclick="return false" class=""><span>Transactions</span></a>
+                                <ul >
+                <li  class="   last level1"> <a href="https://easilifestyle.com/index.php/transactions/adminhtml_transactions/"   class=""><span>Transactions Manager</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level0"> <a href="#"  onclick="return false" class=""><span>Pool Manager</span></a>
+                                <ul >
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/affiliatecommission/adminhtml_affiliatecommission/"   class=""><span>Affiliate Commission</span></a>
+                    </li>
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/companypool/adminhtml_companypool/"   class=""><span>Company Pool</span></a>
+                    </li>
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/orphanpool/adminhtml_orphanpool/"   class=""><span>Walk-in Pool</span></a>
+                    </li>
+                <li  class="   last level1"> <a href="https://easilifestyle.com/index.php/groupsales/adminhtml_groupsales/"   class=""><span>Group Sales</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level0"> <a href="#"  onclick="return false" class=""><span>Commissions</span></a>
+                                <ul >
+                <li  class="   last level1"> <a href="https://easilifestyle.com/index.php/commissions/adminhtml_commissions/"   class=""><span>Commissions Manager</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level0"> <a href="#"  onclick="return false" class=""><span>Reports</span></a>
+                                <ul >
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level1"> <a href="#"  onclick="return false" class=""><span>Sales</span></a>
+                                <ul >
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/report_sales/sales/"   class=""><span>Sales Report</span></a>
+                    </li>
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/report_sales/tax/"   class=""><span>Tax</span></a>
+                    </li>
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/report_sales/shipping/"   class=""><span>Shipping</span></a>
+                    </li>
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/report_sales/invoiced/"   class=""><span>Total invoiced</span></a>
+                    </li>
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/report_sales/refunded/"   class=""><span>Total refunded</span></a>
+                    </li>
+                <li  class="   last level2"> <a href="https://easilifestyle.com/index.php/admin/report_sales/coupons/"   class=""><span>Coupons</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level1"> <a href="#"  onclick="return false" class=""><span>Shopping Cart</span></a>
+                                <ul >
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/report_shopcart/product/"   class=""><span>Products in carts</span></a>
+                    </li>
+                <li  class="   last level2"> <a href="https://easilifestyle.com/index.php/admin/report_shopcart/abandoned/"   class=""><span>Abandoned carts</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level1"> <a href="#"  onclick="return false" class=""><span>Products</span></a>
+                                <ul >
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/report_product/ordered/"   class=""><span>Bestsellers</span></a>
+                    </li>
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/report_product/sold/"   class=""><span>Products Ordered</span></a>
+                    </li>
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/report_product/viewed/"   class=""><span>Most Viewed</span></a>
+                    </li>
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/report_product/lowstock/"   class=""><span>Low stock</span></a>
+                    </li>
+                <li  class="   last level2"> <a href="https://easilifestyle.com/index.php/admin/report_product/downloads/"   class=""><span>Downloads</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level1"> <a href="#"  onclick="return false" class=""><span>Customers</span></a>
+                                <ul >
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/report_customer/accounts/"   class=""><span>New Accounts</span></a>
+                    </li>
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/report_customer/totals/"   class=""><span>Customers by orders total</span></a>
+                    </li>
+                <li  class="   last level2"> <a href="https://easilifestyle.com/index.php/admin/report_customer/orders/"   class=""><span>Customers by number of orders</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level1"> <a href="#"  onclick="return false" class=""><span>Reviews</span></a>
+                                <ul >
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/report_review/customer/"   class=""><span>Customers Reviews</span></a>
+                    </li>
+                <li  class="   last level2"> <a href="https://easilifestyle.com/index.php/admin/report_review/product/"   class=""><span>Products Reviews</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level1"> <a href="#"  onclick="return false" class=""><span>Tags</span></a>
+                                <ul >
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/report_tag/customer/"   class=""><span>Customers</span></a>
+                    </li>
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/report_tag/product/"   class=""><span>Products</span></a>
+                    </li>
+                <li  class="   last level2"> <a href="https://easilifestyle.com/index.php/admin/report_tag/popular/"   class=""><span>Popular</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li  class="   last level1"> <a href="https://easilifestyle.com/index.php/admin/report/search/"   class=""><span>Search Terms</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  active  parent level0"> <a href="#"  onclick="return false" class="active"><span>System</span></a>
+                                <ul >
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/system_account/"   class=""><span>My Account</span></a>
+                    </li>
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/notification/"   class=""><span>Notifications</span></a>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level1"> <a href="#"  onclick="return false" class=""><span>Tools</span></a>
+                                <ul >
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/system_backup/"   class=""><span>Backups</span></a>
+                    </li>
+                <li  class="   last level2"> <a href="https://easilifestyle.com/index.php/compiler/process/"   class=""><span>Compilation (Beta)</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level1"> <a href="#"  onclick="return false" class=""><span>Web Services</span></a>
+                                <ul >
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/api_user/"   class=""><span>Users</span></a>
+                    </li>
+                <li  class="   last level2"> <a href="https://easilifestyle.com/index.php/admin/api_role/"   class=""><span>Roles</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/system_design/"   class=""><span>Design</span></a>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level1"> <a href="#"  onclick="return false" class=""><span>Import/Export</span></a>
+                                <ul >
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/system_convert_gui/"   class=""><span>Profiles</span></a>
+                    </li>
+                <li  class="   last level2"> <a href="https://easilifestyle.com/index.php/admin/system_convert_profile/"   class=""><span>Advanced Profiles</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/system_currency/"   class=""><span>Manage Currency Rates</span></a>
+                    </li>
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/system_email_template/"   class=""><span>Transactional Emails</span></a>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level1"> <a href="#"  onclick="return false" class=""><span>Permissions</span></a>
+                                <ul >
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/permissions_user/"   class=""><span>Users</span></a>
+                    </li>
+                <li  class="   last level2"> <a href="https://easilifestyle.com/index.php/admin/permissions_role/"   class=""><span>Roles</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="   parent level1"> <a href="#"  onclick="return false" class=""><span>Magento Connect</span></a>
+                                <ul >
+                <li  class="   level2"> <a href="https://easilifestyle.com/index.php/admin/extensions_local/"   class=""><span>Magento Connect Manager</span></a>
+                    </li>
+                <li  class="   last level2"> <a href="https://easilifestyle.com/index.php/admin/extensions_custom/"   class=""><span>Package Extensions</span></a>
+                    </li>
+            </ul>
+                    </li>
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/system_cache/"   class=""><span>Cache Management</span></a>
+                    </li>
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/system_store/"   class=""><span>Manage Stores</span></a>
+                    </li>
+                <li  class="   level1"> <a href="https://easilifestyle.com/index.php/admin/system_config/"   class=""><span>Configuration</span></a>
+                    </li>
+                <li  class="   last level1"> <a href="https://easilifestyle.com/index.php/AdminLogger/Admin/Grid/"   class=""><span>Admin Logger</span></a>
+                    </li>
+            </ul>
+                    </li>
+            </ul>
+
+    <a id="page-help-link" href="http://www.magentocommerce.com/gethelp/en_GB/Mage_Adminhtml/system_cache/index/">Get help for this page</a>
+    <script type="text/javascript">$('page-help-link').target = 'magento_page_help'</script>
+
+</div>
+

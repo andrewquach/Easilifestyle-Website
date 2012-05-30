@@ -1,0 +1,117 @@
+<div class="page-head">
+    <h3><?php echo $this->__('Upgrade to Distributor') ?></h3>
+</div>
+<?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+<form action="<?php echo $this->getUrl('customer/account/upgradePost') ?>" method="post" id="form-validate">
+<fieldset class="group-select">
+    <?php echo $this->getBlockHtml('formkey')?>
+    <h4 class="legend"><?php echo $this->__('Account Information') ?></h4>
+    <ul>
+        <li>
+            <?php echo $this->getLayout()->createBlock('customer/widget_name')->setObject($this->getCustomer())->toHtml() ?>
+            <div class="validation-advice" style="color:blue; margin-left:60px;">Cheque will be made payable to this name by sequence in NRIC or Passport.</div>
+       </li>
+       <li>
+            <div class="input-box">
+            <label for="username"><?php echo $this->__('Distributor Username') ?> <span class="required">*</span></label><br />
+            <input type="text" name="username" id="username" value="<?php echo $this->htmlEscape($this->getCustomer()->getUsername()) ?>" title="<?php echo $this->__('Distributor Username') ?>" class="required-entry input-text" />
+            </div>
+            <?php $gender = $this->getCustomer()->getGender();?>
+            <div class='input-box'>
+	          	<label for="gender"><?php echo $this->__('Gender') ?><span class="required">*</span></label><br />
+	         		<select name="gender" class="required-entry input-text">
+	         		<option value="">--Select--</option>
+	          		<option value="Male" <?php if($gender == "Male") echo 'selected = "selected"'?>>Male</option>
+	          		<option value="Female" <?php if($gender == "Female") echo 'selected = "selected"'?>>Female</option>
+	         		</select>
+	          </div>
+        </li>		
+        <li>
+            <div class="input-box">
+            <label for="nric"><?php echo $this->__('Distributor NRIC/Passport') ?> <span class="required">*</span></label><br />
+            <input disabled="disabled" type="text" name="nric" id="nric" value="<?php echo $this->htmlEscape($this->getCustomer()->getNric()) ?>" title="<?php echo $this->__('Distributor NRIC/Passport') ?>" class="required-entry input-text" />
+            </div>
+        </li>
+        <li>
+            <div class="input-box">
+            <label for="bank_name"><?php echo $this->__('Bank Name') ?> <span class="required">*</span></label><br />
+            <select name="bank_name" id="bank_name" class="required-entry input-text">
+            	<option value="" selected = "selected">--Select--</option>
+	          	<option value="POSB Bank">POSB Bank</option>
+	          	<option value="DBS Bank">DBS Bank</option>
+	          	<option value="DBS Bank">OCBC Bank</option>
+            </select>
+            </div>
+        </li>
+		<li>
+            <div class="input-box">
+            <label for="account_code"><?php echo $this->__('Distributor Bank Account Number') ?> <span class="required">*</span></label><br />
+            <input type="text" name="account_code" id="account_code" value="<?php echo $this->htmlEscape($this->getCustomer()->getAccountCode()) ?>" title="<?php echo $this->__('Distributor Bank Account Number') ?>" class="required-entry input-text" />
+            </div>
+        </li>
+		<li>
+            <div class="input-box">
+            <label for="bank_code"><?php echo $this->__('Bank Code') ?> <span class="required">*</span>
+            <span class="tooltip"><img src="<?php echo $this->getSkinUrl('images/mark.png')?>"  width="14" height="14" alt=""/> <span style="font-size:12px; font-weight:normal;font-family:tahoma;text-align:left;">
+<?php echo $this->__('<b><u>Bank Code:</u></b><br/><br/> POSB Bank: 7171 <br/> DBS Bank: 7171 <br/> OCBC Bank: 7339') ?>					 
+					 </span></span>
+            </label><br />
+            <input type="text" name="bank_code" id="bank_code" value="<?php echo $this->htmlEscape($this->getCustomer()->getBankCode()) ?>" title="<?php echo $this->__('Distributor Bank Code') ?>" class="required-entry input-text" />
+            </div>
+        </li>
+		<li>
+            <div class="input-box">
+            <label for="branch_code"><?php echo $this->__('Branch Code') ?> <span class="required">*</span>
+            <span class="tooltip"><img src="<?php echo $this->getSkinUrl('images/mark.png')?>"  width="14" height="14" alt=""/> <span style="font-size:12px; font-weight:normal;font-family:tahoma;text-align:left;">
+<?php echo $this->__('<b><u>Branch Code:</u></b><br/><br/> POSB Bank: 081 <br/> DBS Bank: First 3 digits from Account Number <br/> OCBC Bank: First 3 digits from Account Number') ?>					 
+					 </span></span>
+            </label><br />
+            <input type="text" name="branch_code" id="branch_code" value="<?php echo $this->htmlEscape($this->getCustomer()->getBranchCode()) ?>" title="<?php echo $this->__('Distributor Bank Branch Code') ?>" class="required-entry input-text" />
+            </div>
+        </li>
+		
+        <?php $_dob = $this->getLayout()->createBlock('customer/widget_dob') ?>
+<?php if ($_dob->isEnabled()): ?>
+        <li><?php echo $_dob->setDate($this->getCustomer()->getDob())->toHtml() ?></li>
+<?php endif ?>
+        <li>
+            <div class="input-box">
+            <label for="email"><?php echo $this->__('Email Address') ?> <span class="required">*</span></label><br />
+            <input type="text" name="email" id="email" value="<?php echo $this->htmlEscape($this->getCustomer()->getEmail()) ?>" title="<?php echo $this->__('Email Address') ?>" class="required-entry validate-email input-text" />
+            </div>
+        </li>
+<?php $_taxvat = $this->getLayout()->createBlock('customer/widget_taxvat') ?>
+<?php if ($_taxvat->isEnabled()): ?>
+        <li><?php echo $_taxvat->setTaxvat($this->getCustomer()->getTaxvat())->toHtml() ?></li>
+<?php endif ?>
+		<li>
+			<input type="checkbox" id="term_condition_upgrade_agree" class="required-entry " /><a href="http://easilifestyle.com/index.php/terms" target="_blank"> Terms and Conditions</a>
+		</li>
+    </ul>
+</fieldset>
+<fieldset class="group-select" id="term_condition_upgrade" style="display: none">
+<div >
+Terms and Conditions 1
+Terms and Conditions 2 
+...
+</div>
+</fieldset>
+<div class="button-set">
+    <a href="<?php echo $this->getBackUrl() ?>" class="left">&laquo; <?php echo $this->__('Back') ?></a>
+    <p class="required"><?php echo $this->__('* Required Fields') ?></p>
+    <button type="submit" class="form-button"><span><?php echo $this->__('Save') ?></span></button>
+</div>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+    var dataForm = new VarienForm('form-validate', true);
+	function viewterm()
+	{
+		if( document.getElementById('term_condition_upgrade').style.display == 'none')
+			document.getElementById('term_condition_upgrade').style.display = 'block';
+		else
+			document.getElementById('term_condition_upgrade').style.display = 'none';
+	}
+		   
+//]]>
+</script>

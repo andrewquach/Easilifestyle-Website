@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <groupsales_adminhtml_groupsales_index>
+        <reference name="content">
+			<block type="redemption/adminhtml_redemption" name="distribute" template="page/distribute.phtml"/>
+            <block type="groupsales/adminhtml_groupsales" name="groupsales" />
+        </reference>
+    </groupsales_adminhtml_groupsales_index>
+    <groupsales_adminhtml_groupsales_distribute>
+        <reference name="content">
+            <block type="groupsales/adminhtml_groupsales" name="distribute" template="page/distribute.phtml"/>
+        </reference>
+    </groupsales_adminhtml_groupsales_distribute>
+</layout>

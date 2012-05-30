@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <redemption_adminhtml_redemption_index>
+        <reference name="content">
+            <block type="redemption/adminhtml_redemption" name="redemption" />
+        </reference>
+    </redemption_adminhtml_redemption_index>
+	<redemption_adminhtml_redemption_distribute>
+        <reference name="content">
+            <block type="redemption/adminhtml_redemption" name="distribute" template="page/distribute.phtml"/>
+        </reference>
+    </redemption_adminhtml_redemption_distribute>
+</layout>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <companypool_adminhtml_companypool_index>
+        <reference name="content">
+        	<block type="groupsales/adminhtml_groupsales" name="distribute" template="page/distribute.phtml"/>
+            <block type="companypool/adminhtml_companypool" name="companypool" />            
+        </reference>
+    </companypool_adminhtml_companypool_index>
+</layout>

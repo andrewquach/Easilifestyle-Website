@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Vits_Companypool>
+            <version>0.1.0</version>
+        </Vits_Companypool>
+    </modules>
+    <frontend>
+        <routers>
+            <companypool>
+                <use>standard</use>
+                <args>
+                    <module>Vits_Companypool</module>
+                    <frontName>companypool</frontName>
+                </args>
+            </companypool>
+        </routers>
+        <layout>
+            <updates>
+                <companypool>
+                    <file>companypool.xml</file>
+                </companypool>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+			<companypool>
+				<use>admin</use>
+				<args>
+					<module>Vits_Companypool</module>
+					<frontName>companypool</frontName>
+				</args>
+			</companypool>
+        </routers>
+    </admin>
+    <adminhtml>
+		<menu>
+			<companypool module="companypool">
+				<title>Pool Manager</title>
+				<sort_order>71</sort_order>               
+				<children>
+					<items module="companypool">
+						<title>Company Pool</title>
+						<sort_order>1</sort_order>
+						<action>companypool/adminhtml_companypool</action>
+					</items>
+					<items1 module="orphanpool">
+						<title>Walk-in Pool</title>
+						<sort_order>2</sort_order>               
+						<action>orphanpool/adminhtml_orphanpool</action>
+					</items1>
+					<items2 module="groupsales">
+						<title>Group Sales</title>
+						<sort_order>3</sort_order>
+						<action>groupsales/adminhtml_groupsales</action>
+					</items2>
+					<items3 module="affiliatecommission">
+						<title>Affiliate Commission</title>
+						<sort_order>0</sort_order>
+						<action>affiliatecommission/adminhtml_affiliatecommission</action>
+					</items3>	
+				</children>
+			</companypool>
+		</menu>
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<Vits_Companypool>
+							<title>Companypool Module</title>
+							<sort_order>10</sort_order>
+						</Vits_Companypool>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<layout>
+			<updates>
+				<companypool>
+					<file>companypool.xml</file>
+				</companypool>
+			</updates>
+		</layout>
+    </adminhtml>   
+    <global>
+        <models>
+            <companypool>
+                <class>Vits_Companypool_Model</class>
+                <resourceModel>companypool_mysql4</resourceModel>
+            </companypool>
+            <companypool_mysql4>
+                <class>Vits_Companypool_Model_Mysql4</class>
+                <entities>
+                    <companypool>
+                        <table>company_pool</table>
+                    </companypool>
+                </entities>
+            </companypool_mysql4>
+        </models>
+        <resources>
+            <companypool_setup>
+                <setup>
+                    <module>Vits_Companypool</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </companypool_setup>
+            <companypool_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </companypool_write>
+            <companypool_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </companypool_read>
+        </resources>
+        <blocks>
+            <companypool>
+                <class>Vits_Companypool_Block</class>
+            </companypool>
+        </blocks>
+        <helpers>
+            <companypool>
+                <class>Vits_Companypool_Helper</class>
+            </companypool>
+        </helpers>
+    </global>
+</config>

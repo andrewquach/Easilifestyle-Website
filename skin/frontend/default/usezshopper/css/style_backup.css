@@ -1,0 +1,112 @@
+.gl-price
+{
+	margin:0;
+}
+.gl-value
+{
+	margin:0;
+}
+.bv-value
+{
+	margin:0;
+}
+#navigation
+{
+   padding-top:5px;
+   height:30px;
+   border:1px solid #e4e4e4;
+   width:100%;
+   background:#f7ae4a;
+   float:left;
+}
+#navigation ul
+{
+	display:block;
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+}
+#navigation ul li
+{
+	margin:0px;
+	padding:0px;	
+    color:#081644;
+    float:left;
+    display:block;
+}
+#navigation ul li a
+{	
+   font-family:Verdana, Geneva, sans-serif;
+   font-size:11px;
+   color:#2c2c2b;	
+   text-transform:uppercase;
+   float:left;
+   display:block;
+   padding-left:45px;
+   padding-right:46px;
+}
+#navigation ul li a:hover
+{
+  background:black;	
+  color:#fff;
+}
+.ambassador_nav
+{
+	
+	margin-bottom:50px;
+	
+	
+}
+.ambassador_nav ul
+{
+	
+	float: left;
+	
+}
+.ambassador_nav ul li
+{
+	float: left;
+	background-color:black;
+	background-image:url(../images/currency_switcher_bg.gif) ;
+	border-color:#CCCCCC #AAAAAA #AAAAAA #CCCCCC;
+	color:#555555;
+	padding:  5px 5px 5px 5px;
+	margin-right: 5px;
+	text-transform:uppercase;
+}
+.ambassador_nav ul li a
+{
+	color: #f8ea07;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+.redemption-new
+{
+	margin:0;
+	padding:0;
+	font-size:10px;
+   	color:red;
+	text-decoration:blink;
+}
+.redemption-view
+{
+	margin:0;
+	padding:0;
+	font-size:12px;
+   	color:red;
+	text-decoration:blink;
+	font-weight: bold;
+}
+
+.faqbox a {color:#0788bd;}
+.faqlist a { text-decoration:none; font-weight:bold; font-size:14px; color:#000; display:block; padding-bottom:10px;}
+.faqlist a:hover { color:#0788bd;} 
+.faq-ansbox { border-top: 1px dashed #CCC; padding:14px 0px;}
+.faq-quetitle { background:#333; color:#FFF; font-weight:bold; padding:2px 5px; margin-bottom:10px;}
+
+span.tooltip span {display:none; padding:2px 3px; margin-left:6px;  width:230px;text-decoration:none}
+span.tooltip:hover span{display:inline; position:absolute; background:#c9f2ff; color:#000; text-align:center; border:1px solid #048fbc;}
+#lang{ float:left}
+

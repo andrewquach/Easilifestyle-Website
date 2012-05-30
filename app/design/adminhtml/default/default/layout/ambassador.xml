@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <ambassador_adminhtml_ambassador_index>
+        <reference name="content">
+            <block type="ambassador/adminhtml_ambassador" name="ambassador" />
+        </reference>
+    </ambassador_adminhtml_ambassador_index>
+</layout>

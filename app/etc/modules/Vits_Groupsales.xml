@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Vits_Groupsales>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Vits_Groupsales>
+    </modules>
+</config> 

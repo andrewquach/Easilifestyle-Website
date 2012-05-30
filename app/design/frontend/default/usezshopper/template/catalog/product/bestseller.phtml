@@ -1,0 +1,40 @@
+<?php
+
+$totalPerPage = ($this->show_total) ? $this->show_total : 6;
+$counter = 1;
+$visibility = array(
+                      Mage_Catalog_Model_Product_Visibility::VISIBILITY_BOTH,
+                      Mage_Catalog_Model_Product_Visibility::VISIBILITY_IN_CATALOG
+                  );
+
+$storeId = Mage::app()->getStore()->getId();
+$_productCollection = Mage::getResourceModel('reports/product_collection')
+                              ->addAttributeToSelect('*')
+                              ->addOrderedQty()
+                              ->addAttributeToFilter('visibility', $visibility)
+                              ->setOrder('ordered_qty', 'desc');
+
+?>
+
+<div class="frame_menu" style="padding-bottom:8px;">
+                      <div class="frame_menu_t" style="background:url(<?php echo $this->getSkinUrl('images/menu_pro_r.jpg')?>) top left no-repeat;"><h4><?php echo $this->__('Bestsellers') ?></h4></div>
+                      <div class="frame_menu_c">
+                         <div class="menu_links">
+                        <ul>
+                        	<?php foreach($_productCollection as $product): ?>
+	                            <?php if($counter <= 6): ?>
+									<?php $productUrl =  $product->getProductUrl() ?>
+		                           	<li><a href="<?php echo $productUrl ?>" title="View <?php echo $product->name ?>"><?php echo $product->name ?></a></li>
+	                          	<?php endif; $counter++; ?>
+							<?php endforeach; ?>                                                                                                 
+                        </ul>
+                         <?php if($counter == 1):?>
+						<div class ="content">
+							<?php echo $this->__('This Store have no item sold.');?>
+						</div>
+						<?php endif;?>
+                      </div>
+                      </div>
+                      <div class="frame_menu_b"><img src="<?php echo $this->getSkinUrl('images/menu_cat_b.jpg')?>" width="218" height="10" alt=""/></div>                      
+                 </div>
+                 <div class="clr"></div>

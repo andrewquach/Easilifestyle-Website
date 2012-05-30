@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <orphanpool_adminhtml_orphanpool_index>
+        <reference name="content">
+        	<block type="groupsales/adminhtml_groupsales" name="distribute" template="page/distribute.phtml"/>
+            <block type="orphanpool/adminhtml_orphanpool" name="orphanpool" />
+        </reference>
+    </orphanpool_adminhtml_orphanpool_index>
+</layout>

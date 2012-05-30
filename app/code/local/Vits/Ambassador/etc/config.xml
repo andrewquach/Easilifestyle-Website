@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Vits_Ambassador>
+            <version>0.1.0</version>
+        </Vits_Ambassador>
+    </modules>
+    <global>
+		<template>
+			<email>
+				<alert_become_ambassador module="Ambassador">
+					<label>Alert when qualified to Ambassador</label>
+					<file>usez/alert_become_ambassador.html</file>
+					<type>html</type>
+				</alert_become_ambassador>
+				
+				<alert_become_senior_ambassador module="Ambassador">
+					<label>Alert when qualified to Senior Ambassador</label>
+					<file>usez/alert_become__senior_ambassador.html</file>
+					<type>html</type>
+				</alert_become_senior_ambassador>
+				
+				<alert_become_affiliate_merchant module="Ambassador">
+					<label>Alert when qualified to Affiliate Merchant</label>
+					<file>usez/alert_become_senior_affiliate_merchant.html</file>
+					<type>html</type>
+				</alert_become_affiliate_merchant>
+				
+				<distribute_company_pool module="Ambassador">
+					<label>distribute_company_pool</label>
+					<file>usez/distribute_company_pool.html</file>
+					<type>html</type>
+				</distribute_company_pool>
+				
+				<distribute_orphan_pool module="Ambassador">
+					<label>distribute_orphan_pool</label>
+					<file>usez/distribute_orphan_pool.html</file>
+					<type>html</type>
+				</distribute_orphan_pool>
+				
+				<distribute_GL_bonnus module="Ambassador">
+					<label>distribute_GL_bonnus</label>
+					<file>usez/distribute_GL_bonnus.html</file>
+					<type>html</type>
+				</distribute_GL_bonnus>
+			</email>
+		</template>
+	</global>
+    <frontend>
+        <routers>
+            <ambassador>
+                <use>standard</use>
+                <args>
+                    <module>Vits_Ambassador</module>
+                    <frontName>ambassador</frontName>
+                </args>
+            </ambassador>
+        </routers>
+        <layout>
+            <updates>
+                <ambassador>
+                    <file>ambassador.xml</file>
+                </ambassador>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+			<ambassador>
+				<use>admin</use>
+				<args>
+					<module>Vits_Ambassador</module>
+					<frontName>ambassador</frontName>
+				</args>
+			</ambassador>
+        </routers>
+    </admin>
+    <adminhtml>
+		<!--<menu>
+			<ambassador module="ambassador">
+				<title>Ambassador</title>
+				<sort_order>71</sort_order>               
+				<children>
+					<items module="ambassador">
+						<title>Manage Items</title>
+						<sort_order>0</sort_order>
+						<action>ambassador/adminhtml_ambassador</action>
+					</items>
+				</children>
+			</ambassador>
+		</menu>
+		--><acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<Vits_Ambassador>
+							<title>Ambassador Module</title>
+							<sort_order>10</sort_order>
+						</Vits_Ambassador>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<layout>
+			<updates>
+				<ambassador>
+					<file>ambassador.xml</file>
+				</ambassador>
+			</updates>
+		</layout>
+    </adminhtml>   
+    <global>
+        <models>
+            <ambassador>
+                <class>Vits_Ambassador_Model</class>
+                <resourceModel>ambassador_mysql4</resourceModel>
+            </ambassador>
+            <ambassador_mysql4>
+                <class>Vits_Ambassador_Model_Mysql4</class>
+                <entities>
+                    <ambassador>
+                        <table>ambassador</table>
+                    </ambassador>
+                    <groupbv>
+                        <table>groupbv</table>
+                    </groupbv>
+                    <groupgl>
+                        <table>groupgl</table>
+                    </groupgl>
+                    <groupglused>
+                        <table>groupglused</table>
+                    </groupglused>
+                    <orphanPool>
+                        <table>orphan_pool</table>
+                    </orphanPool>
+                    <companyPool>
+                        <table>company_pool</table>
+                    </companyPool>
+                    <orphanDistribute>
+                        <table>orphan_distribute</table>
+                    </orphanDistribute>
+                    <companyDistribute>
+                        <table>company_distribute</table>
+                    </companyDistribute>
+                     <affiliatecommission>
+                        <table>affiliatecommission</table>
+                    </affiliatecommission>
+					<affiliatebv>
+                        <table>affiliatebv</table>
+                    </affiliatebv>
+                </entities>
+            </ambassador_mysql4>
+        </models>
+        <resources>
+            <ambassador_setup>
+                <setup>
+                    <module>Vits_Ambassador</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </ambassador_setup>
+            <ambassador_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </ambassador_write>
+            <ambassador_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </ambassador_read>
+        </resources>
+        <blocks>
+            <ambassador>
+                <class>Vits_Ambassador_Block</class>
+            </ambassador>
+        </blocks>
+        <helpers>
+            <ambassador>
+                <class>Vits_Ambassador_Helper</class>
+            </ambassador>
+        </helpers>
+    </global>
+</config>

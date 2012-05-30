@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Amasty_Base>
+            <version>1.0.0</version>
+        </Amasty_Base>
+    </modules>
+    
+    <global>
+        <resources>
+            <ambase_setup>
+                <setup>
+                    <module>Amasty_Base</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </ambase_setup>
+        </resources>    
+    
+        <helpers>
+            <ambase>
+                <class>Amasty_Base_Helper</class>
+            </ambase>
+        </helpers>
+    </global>
+    
+    <adminhtml>
+    	<acl>
+    		<resources>
+    			<all>
+    				<title>Allow Everything</title>
+    			</all>   
+    		</resources>
+    	</acl> 
+    </adminhtml>
+    
+<!--
+    <default>
+        <ambase>
+           <general>
+                <active>1</active>
+            </general>
+        </ambase>
+    </default>
+-->
+</config>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <commissions_adminhtml_commissions_index>
+        <reference name="content">
+            <block type="commissions/adminhtml_commissions" name="commissions" />
+        </reference>
+    </commissions_adminhtml_commissions_index>
+</layout>

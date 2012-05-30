@@ -1,0 +1,69 @@
+﻿<!--@subject Welcome, {{var customer.name}}! @-->
+
+<style type="text/css">
+body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+</style>
+
+<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+    <table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+        <tr>
+            <td align="center" valign="top">
+                <!-- [ header starts here] -->
+                <table cellspacing="0" cellpadding="0" border="0" width="650">
+                    <tr>
+                        <td valign="top">
+                            <a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area='frontend'}}" alt="Magento"  style="margin-bottom:10px;" border="0"/></a></td>
+                    </tr>
+                </table>
+
+                <!-- [ middle starts here] -->
+                <table cellspacing="0" cellpadding="0" border="0" width="650">
+                    <tr>
+                        <td valign="top">
+                            <p><strong>Dear {{htmlescape var=$customer.name}}</strong>,<br/></p>
+                            <p>谢谢您在我们的EasiLifestyle网站注册。<br/></p>
+						  <p>立即登录，开始购物吧！</p>
+
+                            <p style="border:1px solid #BEBCB7; padding:13px 18px; background:#F8F7F5; ">
+                                电邮: {{var customer.email}}<br/>
+                                密码: {{htmlescape var=$customer.password}}
+                            <p>欢迎体验我们轻松便捷的网上购物： 
+<ul>
+                                <li>
+                                  <p>永久购物车 – 除非已经结帐或取消，任何您所选购的产品将一直存在您的购物车里，方便您下次登录时选购。 </p>
+                                </li>
+                                <li>
+                                  <p>地址簿 – 您可以在地址簿里输入您自己的地址，也可以输入您朋友或家人的地址，方便我们直接将产品送至您的朋友或家人</p>
+                                </li>
+                                <li>
+                                  <p>订购历史 – 方便您查看所有您在我们网站上所选购的产品。 </p>
+                                </li>
+                                <li>
+                                  <p>产品评述 – 与其他用户或会员分享您使用产品的体验。 </p>
+                </li>
+                            </ul>
+							    <table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="#D8ECF5">
+							  <tr>
+							    <td><span style="font-size: 24px;">折扣券编号: NEWM10</span> <br>
+							      <br>
+						        （当您购物满$50元，填上此编号，便可以立即享受$10折扣。）</td>
+						      </tr>
+						  </table>
+		          <p>若对我们的网上服务有任何的问题或意见，请随时联系我们: <a href="mailto:sales@easilifestyle.com" style="color:#1E7EC8;">sales@easilifestyle.com</a></p>                        
+                            <p>您诚挚的,<br/>
+							Easilifestyle Store<br/>
+							店主</p>
+							<p>如果您不是该用户，或并没有在我们的网站注册，或者您错误地收到了此邮件，请电邮告知我们 <a href="mailto:sales@easilifestyle.com" style="color:#1E7EC8;">sales@easilifestyle.com</a></p>
+							
+							<br/>
+							<br/>
+							<strong>Confidentiality Notice</strong> <br/>
+							<em>This e-mail is from Easilifestyle Store and is meant for the named addressee.  Internet communications cannot be guaranteed to be secure or error-free as information could be intercepted, corrupted, lost, or contain viruses. The sender therefore cannot accept liability for any errors or omissions in the context of this message.</em>
+					  </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+</div>

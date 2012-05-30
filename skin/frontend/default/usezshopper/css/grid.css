@@ -1,0 +1,189 @@
+@CHARSET "ISO-8859-1";
+/* TABLES
+*******************************************************************************/
+
+/* Grid - General */
+.grid                           { position:relative; border-bottom:0; padding-bottom:.5em; }
+.grid table                     { width:100%; border:1px solid #cbd3d4; border-bottom:none; }
+.grid table.border              { border:1px solid #cbd3d4; }
+.grid tbody                     { background:#fff; }    /* Zebra odd-row */
+.grid tr.even, .grid tr.even tr { background:#f6f6f6; } /* Zebra even-row */
+.grid tr.on-mouse               { background:#fcf5dd; cursor:pointer; } /* Rows mouse-over */
+.grid tr.invalid                { background-color:#d3a5ba !important; }
+.grid th, .grid td              { padding:2px 4px 2px 4px; }
+.grid th                        { white-space:nowrap; }
+.grid td input.input-text       { width:86%; }
+.grid table td                  { border-width:0 1px 1px 0; border-color:#dadfe0; border-style:solid; }
+.grid table.border td           { background:#fff !important; }
+.grid table td.last             { border-right:0; }
+.grid table td.product          { text-align:right; }
+.grid table td.empty-text       { padding:15px; }
+.grid table td .action-select   { width:100%; }
+.grid .separator                { padding:0 4px; color:#b9b9b9; }
+
+.grid tbody.odd tr              { background:#fff !important; }
+.grid tbody.even tr             { background:#f6f6f6 !important; }
+.grid tbody.odd tr td,
+.grid tbody.even tr td          { border-bottom:0; }
+.grid tbody.odd tr.border td,
+.grid tbody.even tr.border td   { border-bottom:1px solid #dadfe0; }
+
+
+/* Grid - Pager and Buttons row */
+table.actions                   { width:100%; margin:.5em 0; }
+table.actions td                { vertical-align:top; }
+.pager select                   { width:4em!important; margin:0 4px; }
+.pager input.page               { width:2em !important; }
+.pager .arrow                   { margin:0 3px; vertical-align:middle; }
+
+
+/* Grid - Headings */
+.grid tr.headings { background:url(../images_admin//sort_row_bg.gif) 0 50% repeat-x; }
+.grid tr.headings th { border-width:1px; border-color:#f9f9f9 #d1cfcf #f9f9f9 #f9f9f9; border-style:solid; padding-top:1px; padding-bottom:0; font-size:.9em; }
+.grid tr.headings th.last { border-right:0; }
+.grid tr.headings th.no-link { /* Grid th with no sorting functionality */ padding-top:2px; padding-bottom:1px; color:#67767e; }
+.grid tr.headings th span.nobr { display:block; /* FF3 fix */ }
+.grid tr.headings th a { display:block; padding:2px 4px 1px 0; color:#2d444f; text-decoration:none; }
+.grid tr.headings th a:hover { color:#d85909; text-decoration:none; }
+.grid tr.headings th a.sort-arrow-desc,
+.grid tr.headings th a.sort-arrow-asc { background:url(../images_admin/sort_on_bg.gif) 0 0 no-repeat; border-bottom:1px solid #fff; border-right:1px solid #fff; padding-bottom:2px; }
+.grid tr.headings th span.sort-title { display:block; padding:3px 12px 4px 0; line-height:1; }
+.grid tr.headings th a.sort-arrow-desc span.sort-title,
+.grid tr.headings th a.sort-arrow-asc span.sort-title { background-position:right 50%; background-repeat:no-repeat; padding:3px 12px 2px 8px; }
+.grid tr.headings th a.sort-arrow-desc span.sort-title { background-image:url(../images_admin/grid_sort_desc.gif); }
+.grid tr.headings th a.sort-arrow-asc span.sort-title { background-image:url(../images_admin/grid_sort_asc.gif); }
+
+
+/* Grid - Mass Action */
+.massaction { width:100%; height:26px; border:1px solid #d1cfcf; border-bottom:none; background:url(../images_admin/massaction_bg.gif) repeat-x 0 100% #ebebeb; font-size:.9em; }
+.massaction td                              { width:50%; border-top:1px solid #fff; padding:1px 8px; vertical-align:middle; }
+.massaction .entry-edit fieldset .select    { width:auto; /*width:120px;*/ display:inline; }
+.massaction .entry-edit fieldset            { margin:0; padding:0; background:none; border:none; }
+.massaction .entry-edit fieldset .field-row { display:inline; }
+.massaction .entry-edit .field-row label    { float:none; width:auto; margin-left:13px; }
+.massaction .entry-edit                     { margin:0 !important; padding:0; }
+.massaction a { text-decoration:none; }
+.massaction .entry-edit fieldset span.form_row,
+.massaction .entry-edit fieldset span.field-row { clear:none !important; display:inline; float:left !important; margin:0; padding:0 5px 0 0; }
+
+.massaction .entry-edit .outer-span { float:left; }
+
+/* Grid - Filter */
+.grid tr.filter                  { background:url(../images_admin/filter_row_bg.gif) repeat-x #e3eff1; cursor:default; }
+.grid tr.filter th               { padding-top:5px; padding-bottom:5px; border:1px solid #bdbdbd; border-width:0 1px 1px 0; white-space:normal; }
+.grid tr.filter th.last          { border-right:0; }
+.grid tr.filter input.input-text { width:85%; }
+.grid tr.filter select           { width:100%; }
+.grid tr.filter .range .range-line { margin-bottom:3px; width:100px; }
+.grid tr.filter .range div.date  { min-width:121px; }
+.grid tr.filter .range input     { float:right; width:50px !important; margin-top:0; }
+.grid tr.filter .range select    { float:right; width:56px !important; margin-top:0; }
+.grid tr.filter .range .label    { display:block; width:36px; float:left; padding-left:2px; }
+.grid tr.filter .date img        { width:15px; height:15px; cursor:pointer; vertical-align:middle; }
+.grid .head-massaction select    { width:50px !important; }
+
+/* Grid Footer */
+.grid table tfoot tr            { background:#D7E5EF; }
+.grid table tfoot tr td         { border-top:1px solid #9babb9; background:#e5ecf2; line-height:1.7em; }
+.grid table.border tfoot tr td  { background:#D7E5EF !important; }
+
+
+/* Dynamic Grid */ /* Used in pages like Catalog -> Attributes */
+.dynamic-grid th                { padding:2px;width:100px; }
+.dynamic-grid td                { padding:2px; }
+.dynamic-grid td input          { width:94px; }
+tr.dynamic-grid td,
+tr.dynamic-grid th { padding:2px 10px 2px 0; width:auto; }
+tr.dynamic-grid input.input-text { width:154px; }
+
+
+
+
+/* ACCORDION
+*******************************************************************************/
+dl.accordion .grid      { margin-bottom:0; }
+dl.accordion dt,
+.entry-edit .entry-edit-head { background:#6f8992; padding:2px 10px; }
+dl.accordion dt, div.collapseable { margin-top:1px; }
+dl.accordion dt a, div.collapseable a {
+    display:block;
+    background:url(../images_admin/entry_edit_head_arrow_down.gif) 100% 50% no-repeat;
+    color:#fff;
+    font-weight:bold;
+    text-decoration:none;
+    }
+
+.entry-edit fieldset.collapseable { margin-bottom:10px; }
+
+dl.accordion dt a:hover, div.collapseable a:hover { color:#fff; text-decoration:none; }
+dl.accordion dt.open a, div.collapseable a.open  { background:url(../images_admin/entry_edit_head_arrow_up.gif) 100% 50% no-repeat; }
+dl.accordion dd         { display:none; }
+dl.accordion dd.open    { display:block; }
+img.accordion-btn       { float:right; margin-top:1px; margin-right:5px; }
+
+/* HEADINGS
+********************************************************************************************/
+
+/* Content Header */
+.content-header {
+    margin-bottom:18px;
+    border-bottom:4px solid #dfdfdf;
+    padding-bottom:.25em;
+    }
+.content-header table           { width:100%; }
+.content-header h3              { float:left; margin:.3em .5em 0 0; color:#eb5e00; font-size:1.25em; line-height:1.2em; }
+.content-header .head h3        { float:none; }
+.content-header .button-set     { white-space:nowrap; text-align:right; }
+.content-header .content-buttons  { white-space:nowrap!important; margin:0; }
+.content-header td.content-buttons  { width:13%;white-space:nowrap!important; margin:0; }
+.content-buttons button,
+.content-header button,
+.filter-actions button          { margin:0 0 0 5px; }
+.side-col .content-header       { border-bottom:0; margin-right:12px; margin-bottom:.6em; }
+.catalog-categories .side-col .content-header { margin-right:0; }  /* Catalog/Categories */
+
+.left-col-block { width:200px; }
+
+/* Floating Content Header */ /* Used to make action buttons always within reach */
+.content-header-floating { display:none; position:fixed; left:0; top:0; width:100%; border-bottom:solid 1px #988753; z-index:100; background:#fdfaa4; opacity:.85; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)" }
+.content-header-floating .content-header { padding:6px 8px 4px 8px; margin-bottom:0; border:0; }
+.content-header-floating td     { padding-right:20px; }
+.content-header-floating button { margin-top:3px; }
+.content-header-floating .content-buttons { float:right; /* margin:12px 25px 0 0;*/ }
+.content-buttons { margin-bottom:5px; float:right; display:inline; white-space:nowrap; }
+.content-header-floating .form-buttons {padding-right:20px; }
+.content-header-floating h3 {margin-left:20px; display:inline; }
+
+
+
+/* Box Head */
+.box-head       { margin-bottom:.6em; text-align:right; }
+.box-head h4    { float:left; margin-bottom:0; }
+
+/* Form Button */
+.content-buttons.form-buttons,
+.content-header .form-buttons   { text-align:right; margin-bottom:0; white-space:nowrap; }
+.content-header .content-buttons-placeholder { display:inline !important; }
+.content-header .form-buttons   { float:right; }
+.content-header td.form-buttons   { float:none; }
+.content-header .form-buttons button { margin-bottom:3px; }
+.sub-btn-set { border:1px solid #ddd; border-width:0 1px; background:url(../images_admin/sub_button_bg.gif) repeat; padding:3px 10px; text-align:right; }
+button,
+.form-button { border-width:1px; border-style:solid; border-color:#ed6502 #a04300 #a04300 #ed6502; padding:0 7px 1px 7px; background:#ffac47 url(../images_admin/btn_bg.gif) repeat-x 0 100%; color:#fff; font:bold 12px arial, helvetica, sans-serif; cursor:pointer; text-align:center !important; white-space:nowrap; }
+button:hover                    { background:#f77c16 url(../images_admin/btn_over_bg.gif) repeat-x 0 0; }
+button:active                   { background:#f77c16 url(../images_admin/btn_on_bg.gif) repeat-x 0 0; }
+button span                     { line-height:1.35em; background-repeat:no-repeat; background-position:0 50%; }
+button.delete,
+button.save,
+button.add                      { padding-left:6px; }
+button.cancel span,
+button.delete span,
+button.save span,
+button.add span,
+button.back span { padding-left:20px; }
+button.back { border-color:#ccc #aaa #aaa #ccc; background-color:#fff; background-image:url(../images_admin/btn_back_bg.gif); color:#555; }
+button.back span { background-image:url(../images_admin/icon_btn_back.gif); }
+
+/* Directional and spacial */
+.f-left, .left      { float:left; }
+.f-right, .right    { float:right; }

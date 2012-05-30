@@ -1,0 +1,8 @@
+<config>
+	<modules>
+		<VEMedia_Customer>
+			<active>true</active>
+			<codePool>local</codePool>
+		</VEMedia_Customer>
+	</modules>
+</config>

@@ -1,0 +1,66 @@
+
+<div id="left_cate">
+        <div id="left_cate_top">商品分类 </div>
+        <div id="left_cate_list">
+		<ul>
+                           					            <li class="level2 nav-new-launch-package active">
+<a href="http://easilifestyle.com/index.php/new-launch-package.html?___SID=U"><span>New Launch Package</span></a>
+</li>
+					        					            <li class="level2 nav-technology">
+<a href="http://easilifestyle.com/index.php/technology.html?___SID=U"><span>Technology</span></a>
+</li>
+					        					            <li onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)" class="level2 nav-air-purifer parent">
+<a href="http://easilifestyle.com/index.php/air-purifer.html?___SID=U"><span>Air Purifer</span></a>
+<ul class="level2">
+<li class="level3 nav-air-purifer-coral-nc100">
+<a href="http://easilifestyle.com/index.php/air-purifer/coral-nc100.html?___SID=U"><span>Coral NC100</span></a>
+</li>
+<li class="level3 nav-air-purifer-vase-nv-100 last">
+<a href="http://easilifestyle.com/index.php/air-purifer/vase-nv-100.html?___SID=U"><span>Vase NV 100</span></a>
+</li>
+</ul></li>
+					        					            <li onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)" class="level2 nav-personal-care parent">
+<a href="http://easilifestyle.com/index.php/personal-care.html?___SID=U"><span>Personal Care</span></a>
+<ul class="level2">
+<li class="level3 nav-personal-care-facial-soap">
+<a href="http://easilifestyle.com/index.php/personal-care/facial-soap.html?___SID=U"><span>Facial Soap</span></a>
+</li>
+<li class="level3 nav-personal-care-feminine-care">
+<a href="http://easilifestyle.com/index.php/personal-care/feminine-care.html?___SID=U"><span>Feminine Care</span></a>
+</li>
+<li class="level3 nav-personal-care-fragrance">
+<a href="http://easilifestyle.com/index.php/personal-care/fragrance.html?___SID=U"><span>Fragrance</span></a>
+</li>
+<li class="level3 nav-personal-care-skin-care">
+<a href="http://easilifestyle.com/index.php/personal-care/skin-care.html?___SID=U"><span>Skin Care</span></a>
+</li>
+<li class="level3 nav-personal-care-glucosamina-cream">
+<a href="http://easilifestyle.com/index.php/personal-care/glucosamina-cream.html?___SID=U"><span>Glucosamina Cream</span></a>
+</li>
+<li class="level3 nav-personal-care-healthy-belt last">
+<a href="http://easilifestyle.com/index.php/personal-care/healthy-belt.html?___SID=U"><span>Healthy Belt</span></a>
+</li>
+</ul></li>
+					        					            <li onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)" class="level2 nav-healthy-care parent">
+<a href="http://easilifestyle.com/index.php/healthy-care.html?___SID=U"><span>Healthy Care</span></a>
+<ul class="level2">
+<li class="level3 nav-healthy-care-bird-s-nest">
+<a href="http://easilifestyle.com/index.php/healthy-care/bird-s-nest.html?___SID=U"><span>Bird's Nest </span></a>
+</li>
+<li class="level3 nav-healthy-care-buckwheat-green-tea last">
+<a href="http://easilifestyle.com/index.php/healthy-care/buckwheat-green-tea.html?___SID=U"><span>Buckwheat Green Tea </span></a>
+</li>
+</ul></li>
+					        					            <li class="level2 nav-courses-seminars">
+<a href="http://easilifestyle.com/index.php/courses-seminars.html?___SID=U"><span>Courses &amp; Seminars</span></a>
+</li>
+					          
+							</ul>
+                       </div>
+        <div id="left_cate_bottom"></div>
+      </div>
+      <br />
+
+	  
+	    
+	  

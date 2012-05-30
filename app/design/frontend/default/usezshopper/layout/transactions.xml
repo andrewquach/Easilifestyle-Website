@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+    </default>
+    <transactions_index_index>
+        <reference name="content">
+            <block type="transactions/transactions" name="transactions" template="transactions/transactions.phtml" />
+        </reference>
+    </transactions_index_index>
+</layout> 

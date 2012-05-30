@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <affiliatecommission_adminhtml_affiliatecommission_index>
+        <reference name="content">
+        	<block type="groupsales/adminhtml_groupsales" name="distribute" template="page/distribute.phtml"/>
+            <block type="affiliatecommission/adminhtml_affiliatecommission" name="affiliatecommission" />            
+        </reference>
+    </affiliatecommission_adminhtml_affiliatecommission_index>
+</layout>

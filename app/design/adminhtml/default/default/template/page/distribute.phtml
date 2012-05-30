@@ -1,0 +1,23 @@
+<script type="text/javascript">
+	function show_confirm(question,url)
+	{
+		var r=confirm(question);
+		if (r==true)
+		  {
+			setLocation(url);
+		  }
+		else
+		  {
+		  	
+		  }
+	}
+</script>
+<div class="grid">
+<div class="hor-scroll">
+<button id="seller_profile" type="button" class="scalable" onclick="show_confirm('Cash Rebate will be return to Customer via Commission. Do you want to continue?','<?php echo $this->getUrl('ambassador/adminhtml_ambassador/cashRebate')?>')" style="float:right;margin-bottom:10px;margin-right:5px;"><span>Return Cash Rebate </span></button>
+<button id="seller_profile" type="button" class="scalable" onclick="show_confirm('Are you sure to distribute Commission for your Distributor?','<?php echo $this->getUrl('ambassador/adminhtml_ambassador/distributeCommission')?>')" style="float:right;margin-bottom:10px;margin-right:5px;"><span>Distribute Commission</span></button>
+<button id="seller_eshop" type="button" class="scalable" onclick="show_confirm('Are you sure to distribute Walk-in-Pool for your Distributor?','<?php echo $this->getUrl('ambassador/adminhtml_ambassador/distributeOrphan')?>')" style="float:right;margin-bottom:10px;margin-right:5px;"><span>Distribute Walk-in-Pool</span></button>
+<button id="seller_pricing" type="button" class="scalable" onclick="show_confirm('Are you sure to distribute Company Pool for your Distributor?','<?php echo $this->getUrl('ambassador/adminhtml_ambassador/distributeCompany')?>')" style="float:right;margin-bottom:10px;margin-right:5px;"><span>Distribute Company Pool</span></button>
+<button id="seller_pricing" type="button" class="scalable" onclick="show_confirm('Are you sure to distribute Affiliate Commision to your Merchant?','<?php echo $this->getUrl('ambassador/adminhtml_ambassador/distributeAffiliate')?>')" style="float:right;margin-bottom:10px;margin-right:5px;"><span>Distribute Affiliate Commission</span></button>
+</div>
+</div>
